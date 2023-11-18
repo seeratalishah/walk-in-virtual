@@ -1,0 +1,548 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+
+@font-face {
+  font-family: "SummerDreamSansDemo";
+  src: url("/fonts/summer_dream_sans/SummerDreamSansDEMO.ttf");
+}
+
+@font-face {
+  font-family: "MadeTommySoft";
+  src: url("/fonts/made_tommy_soft/MADETommySoftBoldPERSONALUSE.otf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+/* Navbar Styles  */
+
+.navbar {
+  background-color: #ffffff !important;
+  padding-block: 20px;
+}
+
+.logo {
+  width: 40px;
+  height: 35px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.navbar-brand {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: #000000;
+  cursor: pointer;
+}
+
+.contact-btn {
+  min-width: 150px; /* Set your specific size for the buttons */
+  border-radius: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  border: 1px solid #232323;
+  background-color: #232323;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.contact-btn:hover {
+  color: #232323;
+  background-color: #ffffff;
+}
+
+/* Hero Section Styles  */
+.hero-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.main-heading {
+  font-family: SummerDreamSansDemo;
+  font-size: 78px;
+  font-weight: 400;
+  line-height: 98px;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+.blue-heading {
+  font-family: MadeTommySoft;
+  font-size: 78px;
+  font-weight: 500;
+  line-height: 76px;
+  letter-spacing: 0em;
+  color: #1648ff;
+}
+
+.hero-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sub-heading {
+  font-family: "Quicksand", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+.hero-section-para {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+.horizantal-buttons-carousal,
+.horizantal-images-carousal {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 10px;
+}
+
+.horizantal-buttons-carousal button {
+  min-width: 150px;
+  border-radius: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  color: #232323;
+  border: 1px solid #232323;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.horizantal-buttons-carousal button:hover {
+  background-color: #232323;
+  color: #ffffff;
+}
+
+.horizantal-buttons-carousal .active-btn {
+  color: #ffffff;
+  border: 1px solid #232323;
+  background-color: #232323;
+}
+
+@media (max-width: 767px) {
+  .main-heading {
+    font-size: 45px;
+    line-height: 48px;
+  }
+  .blue-heading {
+    font-size: 45px;
+    line-height: 48px;
+  }
+}
+
+/* Horizantal Images Styles */
+
+.horizantal-images-container {
+  margin-bottom: 120px;
+}
+
+.horizantal-images-carousal {
+  width: 100%;
+}
+
+.horizantal-images-carousal .img-1 {
+  width: 70%;
+  max-height: 436px;
+}
+
+.horizantal-images-carousal .img-2 {
+  width: 30%;
+  max-height: 436px;
+}
+
+/* Right Image Section Styles  */
+
+.right-img-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.common-heading {
+  font-family: SummerDreamSansDemo;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 68px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  max-width: 900px;
+}
+
+.common-blue-heading {
+  color: #1648ff;
+}
+
+.common-para-text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+li {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+
+.second-image-container {
+  margin-bottom: 90px;
+}
+
+/* How It Works Section Styles  */
+
+.how-works-section {
+    margin-bottom: 120px;
+  }
+  
+  .work-rectangle {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .work-rectangle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("images/vector1.png") center/cover no-repeat;
+    background-color: #232323; /* Adjust the alpha value for the overlay */
+    z-index: -1; /* Move the overlay below the content */
+  }
+  
+  .work-content {
+    position: relative;
+    z-index: 1; /* Ensure the content is above the overlay */
+  }
+
+  .work-text {
+    font-family: SummerDreamSansDemo;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 0em;
+    color: #ffffff;
+    max-width: 800px;
+  }
+
+  .card-container{
+    width: 100%;
+    display: flex;
+  }
+
+  .card{
+    width: 33%;
+    padding: 20px;
+  }
+
+/* 
+.works-container {
+   margin-bottom: 120px;
+}
+
+.work-text {
+  font-family: SummerDreamSansDemo;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 78px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.cards-container {
+ width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+}
+
+.card-container {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  position: relative;
+  background-color: #5d5c5c;
+  width: 32%;
+  height: 262px;
+  color: #ffffff;
+  border-radius: 10px;
+} */
+
+/* .card-tag {
+  position: absolute;
+  top: 0;
+  left: 35px;
+  width: 70px; 
+  height: 70px; 
+  border-radius: 0 0 50% 0; 
+  transform: translate(-50%, 0);
+  content: "";
+  background-color: #1648ff;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* Gallery Section Styles  */
+
+.gallery-container {
+  width: 100%;
+  margin-bottom: 10px;
+  overflow: hidden; /* Hide the vertical scrollbar */
+}
+
+.gallery-row {
+  overflow-x: auto; /* Enable horizontal scrolling for each row */
+  white-space: nowrap;
+  scrollbar-width: thin; /* Firefox */
+}
+
+.gallery-row::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar in WebKit browsers (Chrome, Safari) */
+}
+
+.gallery-item {
+  display: inline-block;
+  width: 675px;
+  height: 532px;
+  margin-right: 12px;
+  overflow: hidden;
+  border: 1px solid #ddd; /* Add a border for separation */
+  border-radius: 63px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+/* Photo Shoot Section Styles  */
+
+.photo-shoot-section {
+  margin-bottom: 120px;
+}
+
+.blue-rectangle {
+  position: relative;
+  width: 100%;
+  height: 463px;
+  overflow: hidden;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue-rectangle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/vector1.png") center/cover no-repeat;
+  background-color: #1945f5; /* Adjust the alpha value for the overlay */
+  z-index: -1; /* Move the overlay below the content */
+}
+
+.get-started {
+  position: relative;
+  z-index: 1; /* Ensure the content is above the overlay */
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.photo-shoot-text {
+  font-family: SummerDreamSansDemo;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  max-width: 800px;
+}
+
+.get-started button {
+  width: 212px;
+  height: 70px;
+  border-radius: 80px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0em;
+}
+
+/* Frequently Asked Questions Section Styles */
+
+.fasq-section {
+  margin-bottom: 120px;
+}
+
+/* Add a CSS class to initially hide the answer div */
+.list-group-item .ms-2.me-auto .answer-style {
+  display: none;
+}
+
+/* Add a CSS class to show the answer div when the parent has the "show-answer" class */
+.list-group-item.show-answer .ms-2.me-auto .answer-style {
+  display: block;
+}
+
+.fasq-section .list-group-item {
+  font-family: "Quicksand", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+  line-height: 30px !important;
+  letter-spacing: 0em !important;
+  padding-block: 20px !important;
+  cursor: pointer !important;
+}
+
+.answer-style {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  margin-top: 20px;
+}
+
+.fasq-section span i{
+    font-size: 40px;
+    cursor: pointer;
+    color: #232323;
+}
+
+/* Tour Inquiry Section Styles  */
+
+.tour-inquiry-section {
+  margin-bottom: 120px;
+}
+
+.black-rectangle {
+  position: relative;
+  width: 100%;
+  height: 629px;
+  overflow: hidden;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black-rectangle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/vector2.png") center/cover no-repeat;
+  background-color: #232323; /* Adjust the alpha value for the overlay */
+  z-index: -1; /* Move the overlay below the content */
+}
+
+.inquiry-form {
+  position: relative;
+  z-index: 1; /* Ensure the content is above the overlay */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inquiry-para {
+  max-width: 900px;
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+
+.inquiry-form button {
+  width: 315px;
+  height: 58px;
+  border-radius: 70px;
+  background-color: #1648ff;
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  outline: none;
+  border: none;
+}
