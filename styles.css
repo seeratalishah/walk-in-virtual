@@ -179,18 +179,6 @@ ul {
   border: 1px solid #232323;
   background-color: #232323;
 }
-/* 
-@media (max-width: 767px) {
-  .main-heading {
-    font-size: 45px;
-  }
-  .blue-heading {
-    font-size: 45px;
-  }
-  .hero-section {
-    margin-bottom: 10px;
-  }
-} */
 
 /* Horizantal Images Styles */
 
@@ -349,60 +337,6 @@ li {
     text-align: center;
   }
 }
-
-/* 
-.works-container {
-   margin-bottom: 120px;
-}
-
-.work-text {
-  font-family: SummerDreamSansDemo;
-  font-size: 58px;
-  font-weight: 400;
-  line-height: 78px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #ffffff;
-}
-
-.cards-container {
- width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 22px;
-}
-
-.card-container {
-  padding: 10px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4px;
-  position: relative;
-  background-color: #5d5c5c;
-  width: 32%;
-  height: 262px;
-  color: #ffffff;
-  border-radius: 10px;
-} */
-
-/* .card-tag {
-  position: absolute;
-  top: 0;
-  left: 35px;
-  width: 70px; 
-  height: 70px; 
-  border-radius: 0 0 50% 0; 
-  transform: translate(-50%, 0);
-  content: "";
-  background-color: #1648ff;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 /* Gallery Section Styles  */
 
