@@ -2,12 +2,32 @@
 
 @font-face {
   font-family: "SummerDreamSansDemo";
-  src: url("/fonts/summer_dream_sans/SummerDreamSansDEMO.ttf");
+  src: url("./Fonts/SummerDreamSansDEMO.ttf");
 }
 
 @font-face {
   font-family: "MadeTommySoft";
-  src: url("/fonts/made_tommy_soft/MADETommySoftBoldPERSONALUSE.otf");
+  src: url("./Fonts/MADETommySoftExtraBoldPERSONALUSE.otf");
+}
+
+@font-face {
+  font-family: "QuickSandBold";
+  src: url("./Fonts/QuicksandBold.ttf");
+}
+
+@font-face {
+  font-family: "QuickSandRegular";
+  src: url("./Fonts/QuicksandRegular.ttf");
+}
+
+@font-face {
+  font-family: "QuickSandMedium";
+  src: url("./Fonts/QuicksandMedium.ttf");
+}
+
+@font-face {
+  font-family: "QuickSandSemiBold";
+  src: url("./Fonts/QuicksandMedium.ttf");
 }
 
 * {
@@ -45,10 +65,10 @@ ul {
 }
 
 .navbar-brand {
-  font-family: "Quicksand", sans-serif;
+  font-family: QuickSandBold;
   font-size: 20px;
   font-weight: 600;
-  line-height: 28px;
+  line-height: normal;
   letter-spacing: 0em;
   color: #000000;
   cursor: pointer;
@@ -57,10 +77,9 @@ ul {
 .contact-btn {
   min-width: 150px; /* Set your specific size for the buttons */
   border-radius: 30px;
-  font-family: "Quicksand", sans-serif;
+  font-family: QuickSandBold;
   font-size: 18px;
-  font-weight: 600;
-  line-height: 23px;
+  line-height: normal;
   letter-spacing: 0em;
   color: #ffffff;
   border: 1px solid #232323;
@@ -88,7 +107,7 @@ ul {
   font-family: SummerDreamSansDemo;
   font-size: 78px;
   font-weight: 400;
-  line-height: 98px;
+  line-height: 82px;
   letter-spacing: 0em;
   color: #000000;
 }
@@ -97,7 +116,7 @@ ul {
   font-family: MadeTommySoft;
   font-size: 78px;
   font-weight: 500;
-  line-height: 76px;
+  line-height: 82px;
   letter-spacing: 0em;
   color: #1648ff;
 }
@@ -109,19 +128,19 @@ ul {
 }
 
 .sub-heading {
-  font-family: "Quicksand", sans-serif;
+  font-family: QuickSandBold;
   font-size: 32px;
   font-weight: 500;
-  line-height: 40px;
+  line-height: normal;
   letter-spacing: 0em;
   color: #000000;
 }
 
 .hero-section-para {
-  font-family: "Quicksand", sans-serif;
+  font-family: QuickSandMedium;
   font-size: 18px;
   font-weight: 400;
-  line-height: 23px;
+  line-height: normal;
   letter-spacing: 0em;
   color: #000000;
 }
@@ -137,10 +156,10 @@ ul {
 .horizantal-buttons-carousal button {
   min-width: 150px;
   border-radius: 30px;
-  font-family: "Quicksand", sans-serif;
+  font-family: QuickSandRegular;
   font-size: 18px;
   font-weight: 400;
-  line-height: 23px;
+  line-height: normal;
   letter-spacing: 0em;
   color: #232323;
   border: 1px solid #232323;
@@ -160,17 +179,18 @@ ul {
   border: 1px solid #232323;
   background-color: #232323;
 }
-
+/* 
 @media (max-width: 767px) {
   .main-heading {
     font-size: 45px;
-    line-height: 48px;
   }
   .blue-heading {
     font-size: 45px;
-    line-height: 48px;
   }
-}
+  .hero-section {
+    margin-bottom: 10px;
+  }
+} */
 
 /* Horizantal Images Styles */
 
@@ -194,18 +214,15 @@ ul {
 
 /* Right Image Section Styles  */
 
-.right-img-container {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+.right-img-section {
   margin-bottom: 60px;
 }
 
 .common-heading {
   font-family: SummerDreamSansDemo;
-  font-size: 58px;
+  font-size: 4vw;
   font-weight: 400;
-  line-height: 68px;
+  line-height: normal;
   letter-spacing: 0em;
   text-align: left;
   color: #000000;
@@ -217,23 +234,25 @@ ul {
 }
 
 .common-para-text {
-  font-family: "Quicksand", sans-serif;
+  font-family: QuickSandRegular;
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: normal;
   letter-spacing: 0em;
-  text-align: left;
 }
 
 li {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  font-family: "Quicksand", sans-serif;
+  font-family: QuickSandRegular;
   font-size: 24px;
   font-weight: 500;
-  line-height: 30px;
+  line-height: normal;
   letter-spacing: 0em;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
 }
 
 .second-image-container {
@@ -243,56 +262,93 @@ li {
 /* How It Works Section Styles  */
 
 .how-works-section {
-    margin-bottom: 120px;
-  }
-  
-  .work-rectangle {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 30px;
-  }
-  
-  .work-rectangle::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("images/vector1.png") center/cover no-repeat;
-    background-color: #232323; /* Adjust the alpha value for the overlay */
-    z-index: -1; /* Move the overlay below the content */
-  }
-  
-  .work-content {
-    position: relative;
-    z-index: 1; /* Ensure the content is above the overlay */
-  }
+  margin-bottom: 120px;
+}
 
+.work-rectangle {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 30px;
+}
+
+.work-rectangle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/vector3.png") center/cover no-repeat;
+  background-color: #232323; /* Adjust the alpha value for the overlay */
+  z-index: -1; /* Move the overlay below the content */
+}
+
+.work-content {
+  position: relative;
+  z-index: 1; /* Ensure the content is above the overlay */
+}
+
+.work-text {
+  font-family: SummerDreamSansDemo;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0em;
+  color: #ffffff;
+  max-width: 800px;
+}
+
+.how-works-section .card {
+  background-color: #393939;
+  border-radius: 10px !important;
+}
+
+.how-works-section .card .card-title {
+  color: #ffffff;
+  font-family: QuickSandMedium;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0em;
+  margin-top: 10px;
+}
+
+.how-works-section .card .card-text {
+  color: #ffffff;
+  font-family: QuickSandRegular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0em;
+  position: relative;
+}
+
+.card-tag {
+  position: absolute;
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  background-color: #1648ff;
+  color: #ffffff;
+  border-radius: 0 0 50% 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: QuickSandRegular;
+}
+
+@media (max-width: 767px) {
   .work-text {
-    font-family: SummerDreamSansDemo;
-    font-size: 72px;
-    font-weight: 400;
-    line-height: 80px;
-    letter-spacing: 0em;
-    color: #ffffff;
-    max-width: 800px;
+    font-size: 38px;
+    text-align: center;
   }
-
-  .card-container{
-    width: 100%;
-    display: flex;
-  }
-
-  .card{
-    width: 33%;
-    padding: 20px;
-  }
+}
 
 /* 
 .works-container {
@@ -350,10 +406,15 @@ li {
 
 /* Gallery Section Styles  */
 
+.gallery-section {
+  margin-bottom: 120px;
+}
+
 .gallery-container {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   overflow: hidden; /* Hide the vertical scrollbar */
+  
 }
 
 .gallery-row {
@@ -368,12 +429,12 @@ li {
 
 .gallery-item {
   display: inline-block;
-  width: 675px;
-  height: 532px;
-  margin-right: 12px;
+  width: 400px;
+  height: 320px;
+  margin-right: 8px;
   overflow: hidden;
   border: 1px solid #ddd; /* Add a border for separation */
-  border-radius: 63px;
+  border-radius: 23px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
@@ -417,6 +478,7 @@ li {
   z-index: 1; /* Ensure the content is above the overlay */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 50px;
 }
 
@@ -424,7 +486,7 @@ li {
   font-family: SummerDreamSansDemo;
   font-size: 72px;
   font-weight: 400;
-  line-height: 80px;
+  line-height: normal;
   letter-spacing: 0em;
   color: #ffffff;
   max-width: 800px;
@@ -440,8 +502,30 @@ li {
   font-family: "Quicksand", sans-serif;
   font-size: 25px;
   font-weight: 700;
-  line-height: 31px;
+  line-height: normal;
   letter-spacing: 0em;
+}
+
+@media (max-width: 900px) {
+  .photo-shoot-text {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .photo-shoot-section .blue-rectangle{
+    height: 340px;
+  }
+
+  .photo-shoot-text {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .get-started{
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 /* Frequently Asked Questions Section Styles */
@@ -479,10 +563,15 @@ li {
   margin-top: 20px;
 }
 
-.fasq-section span i{
-    font-size: 40px;
-    cursor: pointer;
-    color: #232323;
+.fasq-section span i {
+  font-size: 40px;
+  cursor: pointer;
+  color: #232323;
+}
+
+.fasq-section .faq-text {
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 /* Tour Inquiry Section Styles  */
